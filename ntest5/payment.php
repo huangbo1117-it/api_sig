@@ -28,7 +28,7 @@ if ($result->success === true) {
         $host = $_POST['domainName'];
         $response = curl_get_key(array(
             'host' => $host,
-            'url_cron' => $host."/wp-content/plugins/kindredrest-plugin"
+            'url_cron' => $host."/wp-content/plugins/realestate-connector-mydesktop"
         ));
         $row = $response['activation_code'];
         $code_code = $row['code_code'];
